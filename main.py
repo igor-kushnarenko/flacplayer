@@ -1,10 +1,10 @@
-from tkinter import *
 import tkinter as tk
+from tkinter import *
 from tkinter import filedialog
 from pygame import mixer
 
 
-class MP:
+class FlacPlayer:
     def __init__(self, win):
         # Create Tkinter window
         win.geometry('200x200')
@@ -61,6 +61,7 @@ class MP:
         mixer.music.stop()
 
 
-root = Tk()
-MP(root)
-root.mainloop()
+if __name__ == '__main__':
+    root = Tk()
+    FlacPlayer(root)
+    root.mainloop()
